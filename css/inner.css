@@ -1,0 +1,310 @@
+@charset "utf-8";
+/* CSS Document */
+/*----------------
+RESET CSS
+-----------------*/
+body {
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	margin:auto;
+	padding:0;
+	background:#fff;
+	color:#000000;
+	text-align:center;
+	font-family: 'Graphik';
+	font-weight:400;
+	}
+div, ul, h1, h2, h3, h4, h5, li, p, img, form, input, textarea {margin: 0;padding: 0;}
+header, section, footer, aside, nav, main, article, figure {display: block;}
+table, tr, td {border: 0;}
+a {outline: none;color: inherit;text-decoration: none;}
+img {border: none;}
+li {list-style: none;}
+* {box-sizing: border-box;}
+.img-full {max-width: 100%;}
+.clearall {
+	clear: both;
+	font-size: 1px;
+	line-height: 1px;
+	height: 1px;
+	}
+.fl{ float:left;}
+.fr{ float:right;}
+.show-tab, show-mob{ display:none;}
+.show-desk{ display:block;}
+.hide-desk{ display:none;}
+
+/*=========FONTS==========*/
+@font-face {
+	font-family: 'Graphik';
+	src: url('Graphik-Bold.woff2') format('woff2'),
+	url('Graphik-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+	}
+
+@font-face {
+	font-family: 'Graphik';
+	src: url('Graphik-Light.woff2') format('woff2'),
+	url('Graphik-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+	}
+
+@font-face {
+	font-family: 'Graphik';
+	src: url('Graphik-Medium.woff2') format('woff2'),
+	url('Graphik-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+	}
+
+@font-face {
+	font-family: 'Graphik';
+	src: url('Graphik-Regular.woff2') format('woff2'),
+	url('Graphik-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+	}
+
+@font-face {
+	font-family: 'Graphik';
+	src: url('Graphik-Semibold.woff2') format('woff2'),
+	url('Graphik-Semibold.woff') format('woff');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+	}
+/*-----------------------
+	MAIN CSS START
+------------------------*/
+.container {
+	width:1170px;
+	margin:0 auto;
+	padding:0;
+	position:relative;
+	}
+
+.header{
+	float:left;
+	width:100%;
+	background:#ffffff;
+	position:relative;
+	padding:10px 0;
+	}
+			
+.logo{
+	float:left;
+	margin-top:0;
+	}
+
+/*-------------------------
+     bredcrum2 CSS
+--------------------------*/	
+.bredcrum2 {
+    float: left;
+    width: 100%;
+    background: #0f70b7;
+    padding: 3px 0 5px;
+    }
+.bredcrum2 ul{
+	float: left;
+    width: 100%;
+	}	
+.bredcrum2 ul li{
+	float:left;
+	padding: 0 5px;
+	position:relative;
+	color:#ffffff;
+	font-size:15px;
+	letter-spacing:0.5px;
+	text-align:left;
+	}
+.bredcrum2 ul li a{ color:#ffffff;}	
+.bredcrum2 ul li:first-child{
+	padding-left:0;
+	}	
+		
+/*========================
+     privacy CSS START
+=========================*/	 
+.privacy-section{
+	float: left;
+    width: 100%;
+    padding: 40px 0 60px;
+    text-align:left;
+	} 
+.privacy-hdg{
+	float:left;
+    width:100%;
+    font-size:32px;
+    line-height:42px;
+    color:#000000;
+    font-weight:600;
+	}	
+.privacy-cmnHdng{
+	float:left;
+    width:100%;
+    font-size:26px;
+    line-height:36px;
+    color:#000000;
+    font-weight:500;
+	margin-top:25px;
+	}
+.privacy-comnTxt{
+	float:left;
+    width:100%;
+    font-size:17px;
+    line-height:25px;
+    color:#000000;
+    margin-top:20px;
+    letter-spacing:0.5px;
+	}
+.privacy-comnTxt a{
+	color:#0f70b7;
+	font-weight:500;
+	text-decoration:underline;
+	}	
+
+ul.privacy-list{
+	float:left;
+	width:100%;
+	padding-left:20px;
+	}
+ul.privacy-list li{
+	float:left;
+	width:100%;
+	list-style:disc;
+	margin-top:20px;
+	text-align:left;
+	font-size: 17px;
+	padding-left:10px;
+    line-height: 25px;
+    color: #000000;
+    letter-spacing: 0.5px;
+	}
+
+
+
+/*-----------------------
+		Footer
+------------------------*/
+.footer{
+	float: left;
+    width: 100%;
+    padding:40px 0;
+	background:#f0f0f0;
+	}
+.footer a:hover{text-decoration:underline;}
+.ftr-txt{
+    float: left;
+    width: 100%;
+    color: #000;
+	letter-spacing:0.3px;
+	
+	}
+.ftr-strip{
+	float:left;
+	width:100%;
+	padding:25px 25px 25px 400px;
+	position:relative;
+	border:1px solid #acacac;
+	margin-top:25px;
+	}
+.ftr-strip p{
+	float:left;
+	width:100%;
+	font-size:14px;
+	line-height:18px;
+	color:#000000;
+	letter-spacing:0.3px;
+	}
+.ftr-strip2{
+	float:left;
+	width:100%;
+	padding: 10px;
+	position:relative;
+	border:1px solid #acacac;
+	margin-top:20px;
+	font-size:14px;
+	line-height:18px;
+	color:#000000;
+	letter-spacing:0.3px;
+	}
+.ftr-img{
+	position:absolute;
+	left:20px;
+	top:30px;
+	}
+
+.ftr-txt2{
+	float: left;
+    width: 100%;
+    font-size:14px;
+    line-height:18px;
+    color: #000000;
+	margin:15px 0 0 0;
+	letter-spacing:0.5px;
+	padding:0 75px;
+	}	
+.footer .ftr-txt a{
+    padding: 0 5px;
+    color: #000000;
+	font-size:16px;
+	}
+.show-mob, .show-tab {display: none;}
+.show-desk {display: block;}
+.fl{ float:left;}
+.fr{ float:right;}
+
+/*---------Media Querry---------*/
+
+@media only screen and (max-width:1187px){
+.container{width:1004px;}
+
+
+}
+
+
+@media only screen and (max-width:1021px){
+.container{width:750px;}
+.show-desk {display: none;}
+.show-tab {display: block;}
+/*------privacy MEDIA START------*/
+.privacy-hdg {font-size: 30px;line-height: 40px;}
+.privacy-cmnHdng {font-size: 24px;line-height: 34px;}
+
+
+.ftr-strip{ padding:20px;}
+.ftr-img{ position:static; display:block; margin:0 auto;width: 300px;}
+.ftr-strip p{ margin-top:10px;}
+.ftr-txt2{ padding:0;}
+
+}
+
+@media only screen and (max-width:767px){
+.container{width:100%; padding:0 10px; max-width:600px; box-sizing:border-box;}
+.show-desk{display:none;}
+.show-mob{display:block;}
+.hide-mob{ display:none;}
+
+.logo{ width:90px; display:inline-block; vertical-align:middle; float:none;}
+/*------privacy MEDIA START------*/
+.privacy-section {padding: 20px 0 25px;}
+.privacy-hdg {font-size: 26px;line-height: 30px;}
+.privacy-cmnHdng {font-size: 22px;line-height: 30px;margin-top: 20px;}
+.privacy-comnTxt {font-size: 16px;margin-top: 15px;}
+ul.privacy-list li{font-size: 16px;margin-top: 15px; padding-left:0;}
+
+.footer{ padding:0 0 25px;}
+.ftr-txt{ margin:15px 0 0; font-size:14px; line-height:20px; letter-spacing:0.3px;}
+.ftr-img{ width:230px;}
+.ftr-strip { padding: 20px 15px;}
+}
+

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#elVideo_desktop {
+    display: block;
+}
+
+#elVideo_mobile {
+    display: none;
+}
+
+#selectpkg1 {
+    display: none;
+}
+
+#selectpkg2 {
+    display: none;
+}
+
+.section-3 {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    #elVideo_desktop {
+        display: none;
+    }
+
+    #elVideo_mobile {
+        display: block;
+    }
+}
+
+/* class to be used for javascript */
+
+.no-display {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+    margin-top: 0 !important;
+}
+
+.main-video-box {
+    width: 100%;
+    background: #000;
+    border-radius: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.less-full-width {
+    width: 90% !important;
+    margin: auto;
+}
+
+.imp-container {
+    width: 100%;
+}
+
+.sec1-video-bx {
+    position: relative;
+    z-index: 3;
+}
+
+.exitPop.is-active {
+    z-index: 10000000000000000000000000000000;
+    opacity: 1;
+    transition: all ease-in-out 0.3s;
+}
+
+#cbBadge {
+    z-index: 2 !important;
+}
+
+@media only screen and (max-width: 550px) {
+    .sec1-video-bx {
+        position: relative;
+        z-index: 3;
+        padding-bottom: 0;
+    }
+    video {
+        border-radius: 12px !important;
+    }
+}
+
